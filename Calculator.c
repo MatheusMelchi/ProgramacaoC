@@ -13,11 +13,25 @@ int main(){
 
 
     // seleção de operação
-    printf("Qual operacao voce deseja fazer? (+ - * /) ");
+    printf("Qual operacao voce deseja fazer? (+ - * /) \n");
     scanf("%c", &operator);
 
 
-    //checagem de operador (se for diferente dos permitidos o codigo ira fechar e mostrar uma mensagem)
+    //checagem com if (por algum motivo nao funciona ?????)
+/*
+    if(operator == "+" || operator == "-" || operator == "/" || operator == "*"){
+
+    }
+    else{
+
+        printf("Operador invalido! (%c nao e um operador valido)", operator);
+        return 0;
+    }
+    
+*/
+
+    //checagem de operador switch (se for diferente dos permitidos o codigo ira fechar e mostrar uma mensagem)
+    
     switch (operator)
     {
     case '+':
